@@ -2,7 +2,6 @@ pipeline {
     agent any 
     stages {
          stage('Checkout') {
-            agent { label 'jenkinsslave' }
                 steps {
                 //sh "export GIT_SSL_NO_VERIFY=1"
                 //sh "git config --global http.sslverify false"
