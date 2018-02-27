@@ -10,8 +10,7 @@ pipeline {
         }
         stage('Build & Test'){
             steps {
-                sh 'mvn clean install -f project1/pom.xml'
-
+                sh 'mvn clean install'
             }
         }
         stage('Deploy') {
