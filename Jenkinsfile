@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('Deploy') {
+        stage('Deploy ') {
             steps {
                 sh 'make publish'
             }
